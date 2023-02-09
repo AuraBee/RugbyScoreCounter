@@ -1,0 +1,82 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+   
+   <body>
+       <header>
+           <h1> RUGBY RULES!</h1>
+           <h2> Welcome to our home ground</h2>
+           <h3> Enjoy the match </h3>
+           <div class="match-timer">
+            <p>Time Remaining <br>
+            <span id="timer">:90</span></p>
+           </div>
+       </header>
+       
+        <div class="container">
+              <div class="home-el">
+                <h1 id="homeTeam">HOME</h1>
+                    
+                    <div id="score-el">
+                         <p id="homeHeader">Score: </p>
+                         <h1 id="home-score"> 0 </h1>
+                         <p id="home-foul">Fouls: </p>
+                          <h4 id="home-foul-count"> 0 </h4>
+                    </div>
+                
+                    <div class="btn-el">
+                        <button title="Conversion" class="plus2" onclick="add2()">+ 2</button>
+                        <button  title="Penalty Goal" class="plus3" onclick="add3()">+ 3</button>
+                        <button  title="Try" class="plus5" onclick="add5()">+ 5</button>
+                        <button  title="Penalty Try" class="plus7" onclick="add7()">+ 7</button>
+                        
+                        <br>
+                         <div class="foul-el">
+                            <button class="foul-count-btn" onclick="homeNaughties()">Fouls</button>
+                            <button class="foul-deincrement-btn" onclick="minusHomeNaughties()"> - Fouls</button>
+                            <button class="reset-btn" onclick="resetHomeFoul()">Reset Fouls</button> 
+                         </div>
+                    </div>
+                </div>
+            
+            
+                <div class="guest-el">
+                    <h1 id="guestTeam">GUEST</h1>
+                    
+                        <div id="score-el">
+                            <p id="guestHeader">Score: </p>
+                            <h1 id="guest-score">2</h1>
+                            <p id="guest-foul-header">Fouls: </p>
+                            <h4 id="guest-foul-count"> 0 </h4>
+                        </div>
+                        
+                                    
+                        <div class="btn-el">
+                                <button class="plus2" onclick="guestAdd2()">+ 2</button>
+                                <button class="plus3" onclick="guestAdd3()">+ 3</button>
+                                <button class="plus5" onclick="guestAdd5()">+ 5</button>
+                                <button class="plus7" onclick="guestAdd7()">+ 7</button>
+                            <br>
+                         </div>
+                         
+                         <div class="foul-el">
+                            <button class="foul-count-btn" onclick="guestNaughties()">Fouls</button>
+                              <button class="foul-deincrement" onclick="minusGuestNaughties()">Minus Fouls</button>
+                             <button class="reset-btn" onclick="resetGuestFoul()">Reset Fouls</button> 
+                             <!-- <button class="foul-count-btn" onclick="bigNaughty()">BigNaughty</button> -->
+                       </div>
+                </div>
+          </div> 
+          
+          <div class ="reset-el">
+               <button class="reset-btn" onclick="resetAll()">Reset All Scores</button>  
+                <!-- <button class="reset-btn" onclick="resetGuestFoul()">Reset Fouls</button> 
+       -->
+        </div>        
+        <!-- ends container -->
+
+      
+        <script src="index.js"></script>
+    </body>
+</html>

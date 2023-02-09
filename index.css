@@ -1,0 +1,112 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+     margin: 0;
+     background: #1B244A;
+     text-align: center;
+     font-size: 1.6rem;
+}
+
+
+
+h1 {
+    font-weight: 900;
+    font-size: 250%;
+    text-shadow: 1px 1px 55px rgba(238, 238, 238, 1);
+    }
+    
+h2, h3, h4 {
+    font-size: 150%;
+}
+
+p, span {
+    font-size: 200%;
+}
+
+
+#homeTeam, #guestTeam {
+    font-weight: 350%;
+    color: rgba(238, 238, 238, 1);
+    text-shadow: 1px 1px 55px rgba(238, 238, 238, 1);
+    }
+    
+.container {
+    display: flex;
+    justify-content: space-around;
+    /* width: 70%; */
+    /* margin: 0 auto; */
+    margin: 30px;
+    padding: 4em;
+    /* height: 100vh; */
+    text-align: center;
+    border: 4px solid ivory;
+    border-radius: 2em;
+}
+
+.match-timer {
+    background: midnightblue;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 1em;
+    border: 2px solid rgba(238, 238, 238, 1);
+    font-size: 60%;
+    color: chartreuse;
+    text-shadow: 1px 1px 55px chartreuse;
+    }
+
+button {
+    padding: 8px;
+    margin: 5px 10px;
+    width: 45px;
+    height:45px;
+    background: none;
+    border: 1px solid #9AABD8;
+    border-radius: 10px;
+    color:#9AABD8;
+    width: 50px;
+    }
+
+#score-el {
+    background: #080001;
+    margin: 20px 50px;
+    padding:  2px;
+    color: red;
+    text-shadow: 1px 1px 8px red;
+    }
+
+.foul-el{
+    display: flex;
+    justify-content: space-around;
+    /* background: fuchsia  */
+    padding: 1em;
+    }
+
+.foul-el button {
+    background: navy;
+    width: 100px
+}
+
+/* .foul-el button:hover {
+    background: reed;
+    width: 100px
+} */
+/* 
+.btn-el {
+    margin: 10px 0;
+    } */
+
+
+.foul-count-btn, .reset-btn {
+    background: pink;
+    padding: 5px 8px;
+    /* width:60px; */
+    font-size: 80%;
+    }
+
+
+
+/* .foul-count-btn {
+    margin: 20px 0;
+} */
